@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Intro</title>
+    <title>Music App V2.0</title>
+    <link rel="icon" href="./assets/music-note-beamed.svg" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -38,12 +39,9 @@
                   >Favorite Albums</a
                 >
                 <a href="#review_container" class="nav-link">Review</a>
-                <a href="#hall-of-shame_container" class="nav-link"
+                <!-- <a href="#hall-of-shame_container" class="nav-link"
                   >Hall of Shame</a
-                >
-                <a href="#hall-of-shame_container" class="nav-link"
-                  >Hall of Shame</a
-                >
+                > -->
                 <a href="#the-best_container" class="nav-link">The Best Song</a>
                 <a href="#tapestry_container" class="nav-link">Tapestry</a>
               </div>
@@ -53,11 +51,13 @@
       </section>
 
       <section class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center py-3"
+        >
+          <h1 class="display-4 text-center">Music App V0.2</h1>
+          <p class="lead text-center">
+            Hi, there! Welcome to the page. Apart from the favorite one, those
+            are not my personal ideas. Just wanted to mention it. 🙂
           </p>
         </div>
       </section>
@@ -229,7 +229,7 @@
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
-                <th scope="col">Played</th>
+                <th scope="col">Artist</th>
                 <th scope="col">Duration</th>
                 <th></th>
               </tr>
@@ -238,7 +238,7 @@
               <tr>
                 <th scope="row">1</th>
                 <td>K.</td>
-                <td>288.292.577</td>
+                <td>Cigarettes After Sex</td>
                 <td>5:20</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
@@ -252,56 +252,56 @@
               <tr>
                 <th scope="row">3</th>
                 <td>Sunsetz</td>
-                <td>247.812.596</td>
+                <td>Cigarettes After Sex</td>
                 <td>3:35</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>Apocalypse</td>
-                <td>602.846.578</td>
+                <td>Cigarettes After Sex</td>
                 <td>4:50</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">5</th>
                 <td>Flash</td>
-                <td>38.988.112</td>
+                <td>Cigarettes After Sex</td>
                 <td>4:34</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">6</th>
                 <td>Sweet</td>
-                <td>180.154.698</td>
+                <td>Cigarettes After Sex</td>
                 <td>4:52</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">7</th>
                 <td>Opera House</td>
-                <td>42.968.388</td>
+                <td>Cigarettes After Sex</td>
                 <td>6:05</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">8</th>
                 <td>Truly</td>
-                <td>35.849.471</td>
+                <td>Cigarettes After Sex</td>
                 <td>4:04</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">9</th>
                 <td>John Wayne</td>
-                <td>64.595.204</td>
+                <td>Cigarettes After Sex</td>
                 <td>4:18</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
               <tr>
                 <th scope="row">10</th>
                 <td>Young & Dumb</td>
-                <td>38.695.901</td>
+                <td>Cigarettes After Sex</td>
                 <td>4:33</td>
                 <td><span class="badge badge-danger">Delete</span></td>
               </tr>
@@ -334,18 +334,31 @@
               <div class="modal-body">
                 <div class="container">
                   <input
+                    min="1"
                     type="number"
                     class="mb-1"
                     placeholder="Track Number"
+                    id="track-num"
                   />
-                  <input type="text" class="mb-1" placeholder="Track Title" />
+                  <input
+                    type="text"
+                    class="mb-1"
+                    placeholder="Track Title"
+                    id="track-title"
+                  />
                 </div>
                 <div class="container">
-                  <input type="text" class="mb-1" placeholder="Artist Name" />
+                  <input
+                    type="text"
+                    class="mb-1"
+                    placeholder="Artist Name"
+                    id="artist-name"
+                  />
                   <input
                     type="text"
                     class="mb-1"
                     placeholder="Track Duration"
+                    id="track-dur"
                   />
                 </div>
               </div>
@@ -357,8 +370,13 @@
                 >
                   Close
                 </button>
-                <button type="button" class="btn btn-success" id="add-button">
-                  Add Track
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="add-button"
+                  onclick="addNewTrack()"
+                >
+                  Add New Track
                 </button>
               </div>
             </div>
@@ -366,7 +384,7 @@
         </div>
       </section>
 
-      <section id="hall-of-shame_container" class="container py-5">
+      <!-- <section id="hall-of-shame_container" class="container py-5">
         <h2>Hall of Shame</h2>
         <div class="container">
           <div class="row">
@@ -408,7 +426,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="the-best_container" class="container py-5">
         <h2>The Best Songs</h2>
@@ -419,8 +437,10 @@
                 src="https://i.scdn.co/image/ab67616d0000b273a3d613448ffe863f3c6a6fac"
                 alt="fly to stay alive"
               />
-              <p>maNga</p>
-              <p>Fly To Stay Alive (A Bird's Eye)</p>
+              <div class="card-body">
+                <p class="card-title">Fly To Stay Alive (A Bird's Eye)</p>
+                <p class="card-subtitle text-muted">maNga</p>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-8 col-lg-6">
@@ -429,8 +449,10 @@
                 src="https://i.scdn.co/image/ab67616d0000b273a3d613448ffe863f3c6a6fac"
                 alt="fly to stay alive"
               />
-              <p>maNga</p>
-              <p>Fly To Stay Alive (A Bird's Eye)</p>
+              <div class="card-body">
+                <p class="card-title">Fly To Stay Alive (A Bird's Eye)</p>
+                <p class="card-subtitle text-muted">maNga</p>
+              </div>
             </div>
           </div>
         </div>
