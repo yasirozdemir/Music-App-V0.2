@@ -1,0 +1,58 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.jumbotron {
+  /* opacity: 0%;
+  transition: opacity 2000ms; */
+
+  animation: jumbotronFadeIn 2500ms;
+}
+
+@keyframes jumbotronFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card .badge {
+  top: -7px;
+  left: -7px;
+}
+
+#review_container .badge {
+  font-size: 0.9rem;
+  cursor: pointer;
+  opacity: 0%;
+}
+
+#review_container tr:hover .badge {
+  animation: deleteBadgeFadeIn 700ms;
+  opacity: 100%;
+}
+
+@keyframes deleteBadgeFadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+#review_container tr:nth-child(2n) {
+  background-color: #21883728;
+}
+
+#review_container tr:nth-child(2n):hover {
+  background-color: #21883763;
+}
+
+#review_container table + div button:hover {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}

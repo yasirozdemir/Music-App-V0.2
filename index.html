@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Intro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main_container">
+      <section class="container-fluid bg-light">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
+            <a class="navbar-brand" href="#"
+              ><i class="bi bi-music-note-beamed" style="font-size: 1.5rem"></i
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="#favorites_container" class="nav-link"
+                  >Favorite Albums</a
+                >
+                <a href="#review_container" class="nav-link">Review</a>
+                <a href="#hall-of-shame_container" class="nav-link"
+                  >Hall of Shame</a
+                >
+                <a href="#hall-of-shame_container" class="nav-link"
+                  >Hall of Shame</a
+                >
+                <a href="#the-best_container" class="nav-link">The Best Song</a>
+                <a href="#tapestry_container" class="nav-link">Tapestry</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <section class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Fluid jumbotron</h1>
+          <p class="lead">
+            This is a modified jumbotron that occupies the entire horizontal
+            space of its parent.
+          </p>
+        </div>
+      </section>
+
+      <section id="favorites_container" class="container py-5">
+        <h2>Favorite Albums in 2022</h2>
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow"
+                >Funk - Pop Rock</span
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/d/d5/Harry_Styles_-_Harry%27s_House.png"
+                alt="Harry's House"
+              />
+              <div class="card-body">
+                <p class="card-title">Harry's House</p>
+                <p class="card-subtitle text-muted">Harry Styles</p>
+                <p class="duration">42:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow">Pop</span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Ed_Sheeran_-_Equals.png/220px-Ed_Sheeran_-_Equals.png"
+                alt="="
+              />
+              <div class="card-body">
+                <p class="card-title">=</p>
+                <p class="card-subtitle text-muted">Ed Sheeran</p>
+                <p class="duration">48:23</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow"
+                >Electronica</span
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Midnights_-_Taylor_Swift.png/220px-Midnights_-_Taylor_Swift.png"
+                alt="Midnights"
+              />
+              <div class="card-body">
+                <p class="card-title">Midnights</p>
+                <p class="card-subtitle text-muted">Taylor Swift</p>
+                <p class="duration">44:02</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow"
+                >Alternative</span
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/The_Weeknd_-_The_Highlights.png/220px-The_Weeknd_-_The_Highlights.png"
+                alt="The Highlights"
+              />
+              <div class="card-body">
+                <p class="card-title">The Highlights</p>
+                <p class="card-subtitle text-muted">The Weekend</p>
+                <p class="duration">77:55</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow">Pop</span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Olivia_Rodrigo_-_SOUR.png/220px-Olivia_Rodrigo_-_SOUR.png"
+                alt="Sour"
+              />
+              <div class="card-body">
+                <p class="card-title">Sour</p>
+                <p class="card-subtitle text-muted">Olivia Rodrigo</p>
+                <p class="duration">34:41</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow"
+                >Hip Hop</span
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Curtain_Call_cover.jpg/220px-Curtain_Call_cover.jpg"
+                alt="Curtain Call: The Hits"
+              />
+              <div class="card-body">
+                <p class="card-title">Curtain Call: The Hits</p>
+                <p class="card-subtitle text-muted">Eminem</p>
+                <p class="duration">77:55</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow"
+                >Rock -Pop</span
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Elton_John_-_Diamonds.jpg/220px-Elton_John_-_Diamonds.jpg"
+                alt="Diamonds"
+              />
+              <div class="card-body">
+                <p class="card-title">Diamonds</p>
+                <p class="card-subtitle text-muted">Elton John</p>
+                <p class="duration">155:47</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card mt-2">
+              <span class="badge badge-info position-absolute shadow"
+                >Rock</span
+              >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Fleetwood_Mac_50_Years_Dont_Stop.jpg/220px-Fleetwood_Mac_50_Years_Dont_Stop.jpg"
+                alt="50 Years - Don't Stop"
+              />
+              <div class="card-body">
+                <p class="card-title">50 Years - Don't Stop</p>
+                <p class="card-subtitle text-muted">Fleetwood Mac</p>
+                <p class="duration">186:01</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="review_container" class="container py-5">
+        <h2>Review</h2>
+        <div class="container">
+          <div class="row py-3">
+            <img
+              class="col-4"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Cigarettes_After_Sex_%28album%29.svg/1200px-Cigarettes_After_Sex_%28album%29.svg.png"
+              alt="cigarettes-after-sex"
+            />
+            <div class="col-8">
+              <p>
+                "Cigarettes After Sex is an American dream pop band formed in El
+                Paso, Texas, in 2008 by Greg Gonzalez. The band is known for
+                their ethereal, limerent and often dream-like musical style,
+                lyrics often based on the themes of romance and love, as well as
+                Gonzalez's voice, which has been described as "androgynous".[7]
+                While marketed as an ambient pop band, Cigarettes After Sex are
+                also considered to be shoegaze, slowcore and indie rock. The
+                band's debut extended play (EP), I., was released in 2012, with
+                the song "Nothing's Gonna Hurt You Baby" eventually becoming a
+                sleeper hit through commercial licensing. After the release of
+                the standalone single "Affection" in 2015, the band released
+                their self-titled debut studio album in June 2017 to positive
+                reviews. The band's second studio album, Cry, was released on
+                October 25, 2019." - Wikipedia
+              </p>
+              <p>Cigarettes After Sex</p>
+              <p>Dream Pop - Slowcore</p>
+              <p>46 mins 56 secs</p>
+            </div>
+          </div>
+
+          <table class="table table-hover user-select-none mt-4">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Played</th>
+                <th scope="col">Duration</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>K.</td>
+                <td>288.292.577</td>
+                <td>5:20</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Each Time You Fall In Love</td>
+                <td>75.390.174</td>
+                <td>4:50</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Sunsetz</td>
+                <td>247.812.596</td>
+                <td>3:35</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Apocalypse</td>
+                <td>602.846.578</td>
+                <td>4:50</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Flash</td>
+                <td>38.988.112</td>
+                <td>4:34</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Sweet</td>
+                <td>180.154.698</td>
+                <td>4:52</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Opera House</td>
+                <td>42.968.388</td>
+                <td>6:05</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Truly</td>
+                <td>35.849.471</td>
+                <td>4:04</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>John Wayne</td>
+                <td>64.595.204</td>
+                <td>4:18</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Young & Dumb</td>
+                <td>38.695.901</td>
+                <td>4:33</td>
+                <td><span class="badge badge-danger">Delete</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn btn-success mx-auto"
+              data-toggle="modal"
+              data-target="#addTrackModal"
+            >
+              Add Track
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="addTrackModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="container">
+                  <input
+                    type="number"
+                    class="mb-1"
+                    placeholder="Track Number"
+                  />
+                  <input type="text" class="mb-1" placeholder="Track Title" />
+                </div>
+                <div class="container">
+                  <input type="text" class="mb-1" placeholder="Artist Name" />
+                  <input
+                    type="text"
+                    class="mb-1"
+                    placeholder="Track Duration"
+                  />
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success" id="add-button">
+                  Add Track
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hall-of-shame_container" class="container py-5">
+        <h2>Hall of Shame</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card mt-2">
+                <img src="" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card mt-2">
+                <img src="" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card mt-2">
+                <img src="" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card mt-2">
+                <img src="" alt="" />
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="the-best_container" class="container py-5">
+        <h2>The Best Songs</h2>
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card mt-2">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273a3d613448ffe863f3c6a6fac"
+                alt="fly to stay alive"
+              />
+              <p>maNga</p>
+              <p>Fly To Stay Alive (A Bird's Eye)</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="card mt-2">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273a3d613448ffe863f3c6a6fac"
+                alt="fly to stay alive"
+              />
+              <p>maNga</p>
+              <p>Fly To Stay Alive (A Bird's Eye)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tapestry_container" class="container pt-5">
+        <div class="row">
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/02/caroline-2.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/05/Weather-Alive-.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/08/Rachika_Nayar_Heaven_Come_Crashing_Album_Art-1024x1024.jpeg"
+            alt=""
+          />
+
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2021/11/lets-eat-granda-two-ribbons.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/12/pendant-harp-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/12/naked-flames-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/04/oneiric-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/12/spirit-exit-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/12/Disq-Desperately-Imagining-Someplace-Quiet-album-artwork-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/12/limen-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/01/FontainesDC_SkintyFia_DSP_3000x3000-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2021/11/empath-visitor.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2021/11/shamir-hetereosexuality.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/05/preachers-daughter-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/12/kee-avil-1024x1024.jpeg"
+            alt=""
+          />
+          <img
+            class="col-xl-3 col-md-4 col-sm-6 p-0"
+            src="https://ourculturemag.com/wp-content/uploads/2022/01/aldous-harding-warm-chris-1024x1024.jpeg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <footer class="bg-light d-flex justify-content-center align-items-center">
+        <p id="number-of-albums" class="my-0 mr-3"></p>
+        <p class="my-4 mr-3">Page created by MYOzdemir</p>
+        <a
+          href="https://github.com/yasirozdemir/Music-App-V0.2"
+          target="_blank"
+          class="btn btn-primary btn-lg active my-2 py-1 px-2"
+          role="button"
+          aria-pressed="true"
+          >Github</a
+        >
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
