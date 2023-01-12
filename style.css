@@ -40,6 +40,14 @@ html {
   left: -7px;
 }
 
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
 #review_container .badge {
   font-size: 0.9rem;
   cursor: pointer;
